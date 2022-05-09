@@ -1,0 +1,342 @@
+.App {
+  text-align: left;
+}
+.header {
+  padding: 1px 0;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.form-content {
+    min-height: calc(100% - 80px);
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+  }
+  
+  .form {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    width: 55%;
+    margin: 2%;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #f5f5f5;
+    border-radius: 8px;
+    opacity: 1;
+  }
+  
+  .form-head {
+    display: flex;
+    flex-direction: row;
+    background: #008cff 0% 0% no-repeat padding-box;
+    border-radius: 8px 8px 0px 0px;
+    opacity: 1;
+    padding: 20px;
+  }
+  
+  .form-head-text {
+    flex: 6;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    font: normal normal normal 28px/37px Roboto;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 1;
+    padding-top: 10px;
+  }
+  
+  .form-head-image{
+    padding-right: 35px;
+  }
+  
+  .addressBook-text {
+    text-align: left;
+    font: normal normal bold 22px/25px Montserrat;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    opacity: 1;
+    color: #008cff;
+    margin-left: 10px;
+  }
+  
+  .addressBook-book {
+    color: #42515f;
+  }
+  .row-content {
+    margin-left: 30px;
+    min-width: 80%;
+    min-height: 80%;
+    max-width: 100%;
+  }
+  
+  .form-constrains {
+    margin: 2% 10%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  label {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    text-align: left;
+    font: normal normal normal 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+  }
+  
+  .input {
+    width: 100%;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    opacity: 1;
+    resize: horizontal;
+    padding: 16px 12px;
+  }
+  
+  textarea {
+    height: 80%;
+    width: 100%;
+    resize: none;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    letter-spacing: -1px;
+    opacity: 1;
+    padding-bottom: 60px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  
+  .column-constrains {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 19px;
+  }
+  
+  .column-content {
+    flex: 2;
+  }
+  
+  select {
+    padding: 12px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    text-align: left;
+    font: normal normal normal 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    width: 80%;
+  }
+  
+  .zipcode {
+    padding: 15px 12px;
+  }
+  
+  
+  error-output {
+    margin-left: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: red;
+  }
+  
+  
+  .buttons-contact {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .button {
+    background: #e2e2e2 0% 0% no-repeat padding-box;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    opacity: 1;
+    width: 100px;
+    font: normal normal normal 20px/26px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    padding: 10px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .button-submit {
+    margin-right: 50px;
+  }
+  
+  .button:hover {
+    box-shadow: 0px 8px 15px rgba(77, 74, 74, 0.3);
+  }
+  
+  .button-submit:hover{
+    background-color: #008cff;
+    color: black;
+  }
+  
+  .button-reset:hover{
+    background-color: #008cff;
+    color: black;
+  }
+  
+
+  span{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+  }
+
+  input:focus:invalid{
+    border: 1px solid red;
+  }
+
+  input:focus:invalid ~ span{
+      display: block;
+  }
+
+  textarea:focus:invalid{
+    border: 1px solid red;
+  }
+
+  textarea:focus:invalid ~ span{
+      display: block;
+  }
+  
+  @media only screen and (max-width:900px) {
+    .column-constrains {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+    }
+    .column-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+    select {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .form {
+      height: min-content;
+      width: 80%;
+      overflow-x: scroll;
+    }
+    button {
+      width: 100px;
+    }
+    .button-submit {
+      margin-right: 40%;
+      margin-left: 2%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .button-reset {
+      margin-right: 2%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .buttons-contact {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .form-head-image {
+      margin-right: 5px;
+    }
+    .form-head-text {
+      width: 220px;
+      word-wrap: break-word;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width:600px) {
+    .form {
+      overflow-x: scroll;
+    }
+    .row-content {
+      margin: 10px 20px;
+    }
+    .form-head-text {
+      font: normal normal normal 22px/30px Roboto;
+      width: 100px;
+      word-wrap: break-word;
+      text-align: center;
+    }
+    .form-head-image {
+      height: 30px;
+      width: 30px;
+    }
+    button {
+      display: flex;
+      flex-direction: column;
+      width: 65px;
+      height: auto;
+    }
+    .button-submit {
+      margin-left: 10%;
+      margin-right: 24%;
+      padding-left: 11px;
+    }
+    .button-reset {
+      margin-right: 10%;
+      padding-left: 7px;
+    }
+  }
+  
+  @media only screen and (max-width:220px) {
+    .buttons-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    button {
+      width: 55%;
+      height: auto;
+    }
+    .button-submit, .button-reset {
+      margin: 10px 20px;
+    }
+    select {
+      width: 95%;
+      height: 80px;
+      padding: 0px 0px;
+    }
+    .form {
+      overflow-x: scroll;
+    }
+    .form-head-text {
+      font: normal normal normal 18px/30px Roboto;
+      width: 100px;
+      word-wrap: break-word;
+      text-align: center;
+    }
+    .form-head-image {
+      height: 20px;
+      width: 20px;
+    }
+    .form-head-image {
+      margin-right: 1px;
+    }
+    .address-text {
+      font: normal normal bold 15px/25px Montserrat;
+    }
+    .logo-content {
+      height: 45px;
+      margin-top: 5%;
+    }
+  }
